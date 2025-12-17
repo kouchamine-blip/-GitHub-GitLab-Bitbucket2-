@@ -1,5 +1,5 @@
 [build]
-command = "npx vite build"
+command = "npx run build"
 publish = ".next"
 
 [build.environment]
