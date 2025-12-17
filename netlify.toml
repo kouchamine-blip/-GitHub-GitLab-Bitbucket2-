@@ -1,0 +1,10 @@
+[build]
+command = "npx vite build"
+publish = ".next"
+
+[build.environment]
+NEXT_PUBLIC_SUPABASE_URL = "https://mmcbktghcnpwxlwmfapm.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1tY2JrdGdoY25wd3hsd21mYXBtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU0MjUyOTQsImV4cCI6MjA4MTAwMTI5NH0.l30HG6OBmhFC1eEYWmYJHGLckq2HMI0BiguqrieYNkg"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"

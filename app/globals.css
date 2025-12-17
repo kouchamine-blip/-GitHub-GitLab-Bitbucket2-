@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --finland-blue: #003580;
+  --finland-white: #FFFFFF;
+
+  --tarina-amber: #F59E0B;
+  --tarina-amber-dark: #D97706;
+  --tarina-brown: #654321;
+  --tarina-brown-dark: #4B3821;
+  --tarina-cream: #FFF8F0;
+  --tarina-beige: #F5E6D3;
+}
+
+[data-theme="light"] {
+  --bg-primary: #FFF5E6;
+  --bg-secondary: #FFE5CC;
+  --bg-card: #FFF8F0;
+  --text-primary: #654321;
+  --text-secondary: #8B6F47;
+  --accent-primary: #FF6B35;
+  --accent-hover: #E85D2C;
+  --border-color: #FFD4A3;
+}
+
+.light {
+  --bg-primary: #FFF5E6;
+  --bg-secondary: #FFE5CC;
+  --bg-card: #FFF8F0;
+  --text-primary: #654321;
+  --text-secondary: #8B6F47;
+  --accent-primary: #FF6B35;
+  --accent-hover: #E85D2C;
+  --border-color: #FFD4A3;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1F2937;
+  --bg-secondary: #111827;
+  --bg-card: #374151;
+  --text-primary: #F9FAFB;
+  --text-secondary: #D1D5DB;
+  --accent-primary: #F59E0B;
+  --accent-hover: #FBBF24;
+  --border-color: #4B5563;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
