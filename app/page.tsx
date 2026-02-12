@@ -14,7 +14,7 @@ export default function Home() {
         if (profile.role === 'ADMIN' || profile.role === 'AGENT') {
           router.push('/admin/dashboard');
         } else {
-          router.push('/user');
+          router.push('/tarina');
         }
       } else {
         router.push('/login');
